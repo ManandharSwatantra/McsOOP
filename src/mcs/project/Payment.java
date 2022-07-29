@@ -14,9 +14,5 @@ public class Payment {
     public void setAmount(double amount) {
         this.amount = amount;
     }
-
-    public void paymentDetails() {
-        System.out.println("The total amount to pay is: " + this.amount);
-    }
 }
 
