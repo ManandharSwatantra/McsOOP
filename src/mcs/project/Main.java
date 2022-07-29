@@ -13,19 +13,21 @@ public class Main {
         int option = sc.nextInt();
         switch (option) {
             case 1:
+                System.out.println("-------------------------------");
                 System.out.println("You have selected the Cash Payment");
                 System.out.println("Enter the amount to be paid: ");
                 data = sc.nextDouble();
-                CashPayment obj = new CashPayment();
+                Payment obj = new Payment();
                 obj.setAmount(data);
-                obj.paymentDetails(data);
+                obj.cashPaymentDetails(data);
                 break;
             case 2:
+                System.out.println("-------------------------------");
                 System.out.println("You have selected the Credit Card Payment");
                 System.out.println("Enter the amount to be paid: ");
                 data = sc.nextDouble();
-                CreditCardPayment obj1 = new CreditCardPayment();
-                obj1.paymentDetails(data);
+                Payment obj1 = new Payment();
+                obj1.CreditCardPaymentDetails(data);
         }
     }
 }
