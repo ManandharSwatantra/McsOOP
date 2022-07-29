@@ -18,14 +18,14 @@ public class CreditCardPayment extends Payment{
         switch (option) {
             case 1:
                 super.amount = this.amount + Math.round((this.amount*1.5)/100);
-                System.out.println("The total paid amount after paying from credit card is: "+ super.getAmount());
+                System.out.println("The total paid amount after paying from Credit Card is: "+ super.deliverCharge(super.getAmount()));
                 break;
             case 2:
                 super.amount = this.amount + Math.round((this.amount*3)/100);
-                System.out.println("The total paid amount after paying from credit card is: "+ super.getAmount());
+                System.out.println("The total paid amount after paying from Credit Card is: "+ super.deliverCharge(super.getAmount()));
                 break;
             case 3:
-                System.out.println("The total paid amount after paying from credit card is: "+ super.getAmount());
+                System.out.println("The total paid amount after paying from Credit Card is: "+ super.deliverCharge(super.getAmount()));
                 break;
         }
     }
