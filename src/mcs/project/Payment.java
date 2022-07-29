@@ -31,6 +31,7 @@ public class Payment implements CashPay, CreditCardPay {
     public void cashPaymentDetails(double val) {
         setAmount(val);
         System.out.println("-------------------------------------------------");
+        System.out.println("Total Cost: " + val);
         System.out.println("The total payable amount is: " + "$" + deliverCharge(getAmount()));
     }
 
