@@ -3,9 +3,6 @@ package mcs.project;
 import java.util.Scanner;
 
 public class CreditCardPayment extends Payment{
-/*    CreditCardPayment(double val) {
-        super(val);
-    }*/
     public void paymentDetails(double val) {
         super.setAmount(val);
         System.out.println("From which card will you pay: ");

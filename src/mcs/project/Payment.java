@@ -2,9 +2,6 @@ package mcs.project;
 
 
 public class Payment {
-    /*    Payment(double amount){
-    this.amount = amount;
-}*/
     double amount;
     double charge;
     public double getAmount() {
